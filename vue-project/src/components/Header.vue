@@ -7,6 +7,9 @@
             <RouterLink to="/about">
                 О нас
             </RouterLink>
+            <RouterLink to="/profile">
+                Профиль
+            </RouterLink>
         </nav>
     </header>
 </template>
