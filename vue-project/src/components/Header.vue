@@ -10,6 +10,12 @@
             <RouterLink to="/profile">
                 Профиль
             </RouterLink>
+            <RouterLink to="/news">
+                Новости
+            </RouterLink>
+            <RouterLink to="/messages">
+                Сообщения
+            </RouterLink>
         </nav>
     </header>
 </template>
