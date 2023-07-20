@@ -4,6 +4,8 @@ import About from '../views/About.vue'
 import Profile from '../views/Profie.vue'
 import News from '../views/News.vue'
 import Messages from '../views/Messages.vue'
+import Albums from '../views/Albums.vue'
+import Photos from '../views/Photos.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -32,6 +34,16 @@ const router = createRouter({
       path: '/messages',
       name: 'messages',
       component: Messages
+    },
+    {
+      path: '/albums',
+      name: 'albums',
+      component: Albums
+    },
+    {
+      path: '/albums/:id',
+      name: 'photos',
+      component: Photos
     }
   ]
 })

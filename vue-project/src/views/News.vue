@@ -13,22 +13,26 @@
 
 <script>
 import Post from "@/components/post/Post.vue"
+//import {getPosts} from "@/services/index.js"
     export default{
         name: "News",
         components:{
             Post
         },
+        created()
+        {
+            //this.posts=this.getPosts();
+        },
         data(){
             return{
-                posts:[
-                    {id:1, title:"Пост 1", text: "Какой-то тестовый текст 1"},
-                    {id:2, title:"Пост 2", text: "Какой-то тестовый текст 2"},
-                    {id:3, title:"Пост 3", text: "Какой-то тестовый текст 3"},
-                    {id:4, title:"Пост 4", text: "Какой-то тестовый текст 4"},
-                    {id:5, title:"Пост 5", text: "Какой-то тестовый текст 5"},
-                    {id:6, title:"Пост 6", text: "Какой-то тестовый текст 6"},
-                    {id:7, title:"Пост 7", text: "Какой-то тестовый текст 7"},
-                ]
+           posts:[]
+            }
+        },
+        methods:{
+            getPosts()
+            {
+                return [];
+
             }
         }
     }
